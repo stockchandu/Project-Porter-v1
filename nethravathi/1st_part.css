@@ -1,0 +1,87 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+}
+body{
+    margin-left: 0%;
+    margin-right: 0%;
+    
+}
+#bdiv{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    background-image: url('https://d35ppnqksufxmo.cloudfront.net/frontend_website/bfac42d85a8a709b45cbdba74862ea2c.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+.former{
+    height: 30%;
+    width: 50%;
+    margin-left: 3%;
+    margin-top: 5%;
+
+}
+h1{
+    display: flex;
+    margin-bottom: 10px;
+}
+.heading .prefix{
+    
+    font-weight: 300;
+    margin-right: 10px;
+}
+.subheading{
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+.data{
+    font-size: 15px;
+    line-height: 25px;
+}
+.form{
+    height: 72%;
+    width: 22%;
+    margin-top: 5%;
+    margin-left: 28%;
+    margin-right: 3%;
+    background-color: rgb(255,255,255);
+    border-radius: 30px;
+}
+.form > .subheading{
+    margin-top: 10px;
+    text-align: center;
+}
+form >select,input{
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-color: rgb(180, 179, 179);
+    border-style: solid;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #0b74e4;
+    
+}
+button{
+    margin-top: 2%;
+    margin-left: 5%;
+    height: 40px;
+    width: 90%;
+    background-color: rgb(41,98,255);
+    color: white;
+    border-radius: 5px;
+
+}
+::placeholder{
+    color: rgb(212, 209, 209);
+}
+#number::placeholder{
+    color: black;
+}
