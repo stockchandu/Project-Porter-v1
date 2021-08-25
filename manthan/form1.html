@@ -14,7 +14,7 @@
 
                 #form-enterprize {
                         background-color: #fedf00;
-                        width: 280px;
+                        width: 20rem;
                         border-radius: 2px;
                         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
                         display: flex;
@@ -29,23 +29,23 @@
                 }
 
                 input {
-                        width: 96%;
-                        margin-top: 20px;
+                        width: 99%;
+                        margin-top: 25px;
                         height: 30px;
 
                 }
 
                 select {
-                        width: 97%;
-                        margin-top: 20px;
+                        width: 100%;
+                        margin-top: 25px;
                         height: 35px;
-                        border-color: #FFFFFF;
+                        /* border-color: #FFFFFF; */
                         background-color: white;
                 }
 
                 input :focus {
                         outline: none !important;
-                        border: 2px solid black;
+                        border-color: 10px solid black;
 
                 }
 
@@ -54,16 +54,20 @@
                         background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
                         border: 1px solid #E0C600;
                         border-radius: 2px;
-                        padding: 7px 24px;
+                        padding: 7px 20px;
                         text-align: center;
                         color: #FFFFFF;
                         font-weight: bold;
                         font-size: 1.4rem;
-                        margin-top: 20px;
+                        margin-top: 25px;
+                        width: 100%;
                 }
 
                 .formerror {
                         color: red;
+                        position: absolute;
+                        /* top: 150px; */
+                        z-index: auto;
                 }
         </style>
 </head>
@@ -76,46 +80,57 @@
                 </div>
 
 
-                <form action="" name="myform" onsubmit="return validateForm()" method="post">
-
+                <form action="">
+                        <!-- name="myform" onsubmit="validateForm()" method="post" -->
                         <div class="formdesign">
-                                <select>
-                                        <option value="select city">select city</option>
-                                        <option id="city" value="MUMBAI">MUMBAI</option>
-                                        <option value="delhi">DELHI NCR</option>
-                                        <option value="bglr">BANGALORE</option>
-                                        <option value="hyd">HYDERABAD</option>
-                                        <option value="pne">PUNE</option>
-                                        <option value="chni">CHENNAI</option>
+                                <select id="city">
+                                        <option >Select city</option>
+                                        <option value="MUMBAI">MUMBAI</option>
+                                        <option value="DELHI NCR">DELHI NCR</option>
+                                        <option value="BANGALORE">BANGALORE</option>
+                                        <option value="HYDERABAD">HYDERABAD</option>
+                                        <option value="PUNE">PUNE</option>
+                                        <option value="CHENNAI">CHENNAI</option>
                                 </select>
-                                <div class="formerror"><b></b></div>
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
                         </div>
 
                         <div class="formdesign">
+
                                 <input id="PersonName" type="text" placeholder="Contact Person" required>
-                                <div class="formerror"><b></b></div>
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
                         </div>
 
                         <div class="formdesign">
                                 <input id="CompanyName" type="text" placeholder="Company name">
-                                <div class="formerror"><b></b></div>
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
                         </div>
 
                         <div class="formdesign">
                                 <input type="number" placeholder="+91-" id="number">
-                                <div class="formerror"><b></b></div>
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
                         </div>
                         <div class="formdesign">
-                                <select>
+                                <select id="MontlyTrip">
 
-                                        <option value="select city">Montly trip</option>
-                                        <option value="MUMBAI">None</option>
-                                        <option value="delhi">0-50</option>
-                                        <option value="bglr">50-100</option>
-                                        <option value="hyd">More-than</option>
+                                        <option value="Montlytrip">Montly trip</option>
+                                        <option value="None">None</option>
+                                        <option value="0-50">0-50</option>
+                                        <option value="50-100">50-100</option>
+                                        <option value="More-than 100">More-than 100</option>
 
                                 </select>
-                                <div class="formerror"><b></b></div>
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
                         </div>
                         <div class="formdesign">
                                 <input id="Email" type="Email" placeholder="Email address">
@@ -136,58 +151,107 @@
 </html>
 <script>
 
-        function seterror(id, error) {
-                 element = id;
-    console.log('element:', element)
-            
-   
-          
-       
-              
         
+
+
         
-        }
         function validateForm() {
                 var returnval = true;
 
                 //       check validation 
-
-
+                  
+                var City=document.getElementById("city").value;
+               
+              
                 var name = document.getElementById("PersonName").value;
-                // console.log('name:', name)
+        
 
                 var CompanyName = document.getElementById("CompanyName").value;
-                // console.log('CompanyName:', CompanyName)
+                
 
                 var Mobile = document.getElementById("number").value;
-                 //console.log('Mobile:', Mobile.length)
+              
 
                 var Email = document.getElementById("Email").value;
-                // console.log('Email:', Email)
+               
 
+                var MontlyTrip=document.getElementById("MontlyTrip").value;
+              
 
-
-
-                if (name.length === 0 || name.length<3) {
-                        document.getElementsByClassName("formerror")[1].innerHTML ="Length is too short" ;
+                //validating City
+                 if(City==="Select city"){
+                        document.getElementsByClassName("formerror")[0].innerHTML = "*Select the City";
                         returnval = false;
-                }
-                
-                if(CompanyName.length=== 0 || CompanyName.length<3){
-                        document.getElementsByClassName("formerror")[2].innerHTML ="Length is too short" ;
+                 }else if(City!=="Select city"){
+                        document.getElementsByClassName("formerror")[0].innerHTML = "";
+                        returnval = true;
+                 }
+
+
+                //  validating Name
+                if (name.length === 0 || name.length < 3) {
+                        document.getElementsByClassName("formerror")[1].innerHTML = "*Enter a Name";
                         returnval = false;
+                }else{
+                        document.getElementsByClassName("formerror")[1].innerHTML = ""; 
+                        returnval = true;  
                 }
-                if(Mobile.length<10){
-                        document.getElementsByClassName("formerror")[3].innerHTML ="Please Enter 10 digit number" ;
+
+                //  validating CompanyName
+                if (CompanyName.length === 0 || CompanyName.length < 3) {
+                        document.getElementsByClassName("formerror")[2].innerHTML = "*Enter a Company Name";
                         returnval = false;
-                }
-
-                if(returnval === true){
-
-
-                        document.getElementById("form-enterprize").innerHTML="Thank you so much "+name+" of contacting Porter\n We will get back to you shortly ";
+                }else{
+                        document.getElementsByClassName("formerror")[2].innerHTML = ""; 
+                        returnval = true;  
                 }
                   
+               //  validating Mobile
+                if (Mobile.length !=10) {
+                        document.getElementsByClassName("formerror")[3].innerHTML = "*Please Enter 10 digit number";
+                        returnval = false;
+                }else if(Mobile.length===10){
+                        document.getElementsByClassName("formerror")[3].innerHTML = "";
+                        returnval = true;
+                }
+               
+                //  validating MonthlyTrip
+                if(MontlyTrip==="Montlytrip"){ 
+                        document.getElementsByClassName("formerror")[4].innerHTML = "*Select the Monthly Trip";
+                        returnval = false;
+                }else if(MontlyTrip!=="Montlytrip"){
+                        document.getElementsByClassName("formerror")[4].innerHTML = "";
+                        returnval = true;
+                 }
+
+                 // validating Email
+                if(Email.length===0){
+                        document.getElementsByClassName("formerror")[5].innerHTML = "*You have entered an invalid email address!";   
+                        returnval = false;
+                 }else if (Email.length!==0){
+
+                        document.getElementsByClassName("formerror")[5].innerHTML = "";   
+                        returnval = true;
+                }
+
+                
+                if (returnval === true) {
+                        document.getElementById("form-enterprize").innerHTML = "Thank you so much " + name + " of contacting Porter\n We will get back to you shortly ";
+                }
+
                 return returnval;
+        }
+
+
+        function ValidateEmail(Email) {
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)) {
+                        returnval = true;
+                } else {
+                        document.getElementsByClassName("formerror")[4].innerHTML = "You have entered an invalid email address!";
+                        console.log("n")
+                }
+
+                // alert("You have entered an invalid email address!")
+                returnval = false;
         }
 </script>
