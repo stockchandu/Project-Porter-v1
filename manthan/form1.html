@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                }
+
+                #form-enterprize {
+                        background-color: #fedf00;
+                        width: 280px;
+                        border-radius: 2px;
+                        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        flex-direction: column;
+                        padding: 14px 18px;
+                        position: absolute;
+                        right: 40px;
+                }
+
+                h2 {
+                        text-align: center;
+                }
+
+                input {
+                        width: 96%;
+                        margin-top: 20px;
+                        height: 30px;
+
+                }
+
+                select {
+                        width: 97%;
+                        margin-top: 20px;
+                        height: 35px;
+                        border-color: #FFFFFF;
+                        background-color: white;
+                }
+
+                input :focus {
+                        outline: none !important;
+                        border: 2px solid black;
+
+                }
+
+
+                #Request-callback {
+                        background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
+                        border: 1px solid #E0C600;
+                        border-radius: 2px;
+                        padding: 7px 24px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        margin-top: 20px;
+                }
+
+                .formerror {
+                        color: red;
+                }
+        </style>
+</head>
+
+<body>
+        <div id="form-enterprize">
+                <div id="thankyou"></div>
+                <div class="formdesign">
+                        <h2>FOR ENTERPRISES</h2>
+                </div>
+
+
+                <form action="" name="myform" onsubmit="return validateForm()" method="post">
+
+                        <div class="formdesign">
+                                <select>
+                                        <option value="select city">select city</option>
+                                        <option id="city" value="MUMBAI">MUMBAI</option>
+                                        <option value="delhi">DELHI NCR</option>
+                                        <option value="bglr">BANGALORE</option>
+                                        <option value="hyd">HYDERABAD</option>
+                                        <option value="pne">PUNE</option>
+                                        <option value="chni">CHENNAI</option>
+                                </select>
+                                <div class="formerror"><b></b></div>
+                        </div>
+
+                        <div class="formdesign">
+                                <input id="PersonName" type="text" placeholder="Contact Person" required>
+                                <div class="formerror"><b></b></div>
+                        </div>
+
+                        <div class="formdesign">
+                                <input id="CompanyName" type="text" placeholder="Company name">
+                                <div class="formerror"><b></b></div>
+                        </div>
+
+                        <div class="formdesign">
+                                <input type="number" placeholder="+91-" id="number">
+                                <div class="formerror"><b></b></div>
+                        </div>
+                        <div class="formdesign">
+                                <select>
+
+                                        <option value="select city">Montly trip</option>
+                                        <option value="MUMBAI">None</option>
+                                        <option value="delhi">0-50</option>
+                                        <option value="bglr">50-100</option>
+                                        <option value="hyd">More-than</option>
+
+                                </select>
+                                <div class="formerror"><b></b></div>
+                        </div>
+                        <div class="formdesign">
+                                <input id="Email" type="Email" placeholder="Email address">
+                                <b>
+                                        <div class="formerror"></div>
+                                </b>
+                        </div>
+
+                </form>
+
+                <button onclick="validateForm()" type="submit" id="Request-callback">REQUEST CALLBACK</button>
+
+
+
+        </div>
+</body>
+
+</html>
+<script>
+
+        function seterror(id, error) {
+                 element = id;
+    console.log('element:', element)
+            
+   
+          
+       
+              
+        
+        
+        }
+        function validateForm() {
+                var returnval = true;
+
+                //       check validation 
+
+
+                var name = document.getElementById("PersonName").value;
+                // console.log('name:', name)
+
+                var CompanyName = document.getElementById("CompanyName").value;
+                // console.log('CompanyName:', CompanyName)
+
+                var Mobile = document.getElementById("number").value;
+                 //console.log('Mobile:', Mobile.length)
+
+                var Email = document.getElementById("Email").value;
+                // console.log('Email:', Email)
+
+
+
+
+                if (name.length === 0 || name.length<3) {
+                        document.getElementsByClassName("formerror")[1].innerHTML ="Length is too short" ;
+                        returnval = false;
+                }
+                
+                if(CompanyName.length=== 0 || CompanyName.length<3){
+                        document.getElementsByClassName("formerror")[2].innerHTML ="Length is too short" ;
+                        returnval = false;
+                }
+                if(Mobile.length<10){
+                        document.getElementsByClassName("formerror")[3].innerHTML ="Please Enter 10 digit number" ;
+                        returnval = false;
+                }
+
+                if(returnval === true){
+
+
+                        document.getElementById("form-enterprize").innerHTML="Thank you so much "+name+" of contacting Porter\n We will get back to you shortly ";
+                }
+                  
+                return returnval;
+        }
+</script>
