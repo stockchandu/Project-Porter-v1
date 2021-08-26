@@ -1,7 +1,6 @@
 
 
-    let div_slide = document.getElementById("slide_div");
-    let create_image = document
+   
     let i = 0;
     let arr = [];
 
@@ -12,7 +11,10 @@
 
     function slide_show() {
 
-        document.slide.src = arr[i];
+        let div_slide = document.getElementById("slide_div");
+        // let create_image=
+
+        document.slide_1.src = arr[i];
 
     if (i < arr.length - 1) {
         i++

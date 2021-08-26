@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Porter</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="estimate.css">
+    <link rel="stylesheet" href="pickup.css">
+    <link rel="stylesheet" href="portersYou.css">
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+
+    #emp_div{
+        width: 100%;
+        height:8000px;
+        /* background-color:red; */
+        /* margin-left: -1%; */
+        margin-top: 63%;
+        /* transform: rotate(-0.1deg); */
+        position: absolute;
+    }
+</style>
+
+
+<body>
+
+    <div></div>
+
+    <div id="parent_header">
+
+        <div> <img
+                src="https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/logo_white-d8f19cc9b973937a42b6c6ffadfd1f05256da698ee3ff194ac9fd72d0efdc1aa.svg"
+                alt=""></div>
+
+        <div>
+            <p>India's Largest Marketplace for Intracity Logistics</p>
+        </div>
+
+        <div><img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/9e4ccae9c5a1b669d8fa2648db220c3f.svg"
+                alt=""></div>
+
+        <div>
+            <p>DRIVE WITH US</p>
+            <span>turn kms into money</span>
+        </div>
+
+        <div>
+            <p>JOIN US</p>
+        </div>
+
+        <div> <img src="call.png" alt=""></div>
+        <div>
+            <p>4410-4410</p>
+            <span>add your city code</span>
+        </div>
+
+
+    </div>
+
+    <div></div>
+    <div id="header_1_1">
+        <div>CITY TEMPO</div>
+        <div>PACKERS & MOVERS</div>
+        <div>DRIVER PARTNERS</div>
+        <div>FOR ENTERPRISE</div>
+        <div>Support</div>
+        <div>Track Order</div>
+    </div>
+
+
+    <div id="slide_div_1"><img src="" alt="" name="slide_1" width="100%" height="300vh"></div>
+    
+    <!-- estmate part start here -->
+    <div id="show_error">
+        <div></div>
+        <div id="err_pick_up"></div>
+        <div id="err_drop_off"></div>
+        <div id="err_mobile_num"></div>
+        <div></div>
+        <div id="err_requirement"></div>
+        <div></div>
+    </div>
+
+    <div id="get_estimate">
+
+        <div>
+            <div>City</div>
+            <div><select id="select_box_1">
+                    <option value="mumbai">MUMBAI</option>
+                    <option value="bangalore">BANGALORE</option>
+                    <option value="hyderabad">HYDERABAD</option>
+                    <option value="chennai">CHENNAI</option>
+                    <option value="pune">PUNE</option>
+                    <option value="">DELHI NCR</option>
+                    <option value="">AHMEDABAD</option>
+                    <option value="">PUNE</option>
+                    <option value="">SURAT</option>
+                    <option value="">KOLKATA</option>
+                    <option value="">JAIPUR</option>
+                    <option value="">LUCKNOW</option>
+                    <option value="">COIMBATORE</option>
+                </select></div>
+        </div>
+
+        <div id="err_div_1">
+            <div id="name_1">PickUp Address</div>
+            <div><input type="text" placeholder="Enter PickUp Address" id="pick_up"></div>
+        </div>
+
+        <div id="err_div_2">
+            <div id="name_2">DropOff Address</div>
+            <div><input type="text" placeholder="Enter DropOff Address" id="drop_off"></div>
+        </div>
+
+        <div id="err_div_3">
+            <div id="name_3">Mobile Number</div>
+            <div id="number_div_2">
+                <div>+91</div>
+                <div><input type="text" placeholder="Enter Mobile Number" id="mobile"></div>
+            </div>
+        </div>
+
+
+        <div>
+            <div id="name_4">.</div>
+            <div> <input type="text" placeholder="Name(Optional)" id="option_name" onfocus="this.placeholder='optional'"
+                    onblur="this.placeholder='optional'"></div>
+        </div>
+
+
+        <div id="err_div_4">
+            <div id="name_5">Requirement</div>
+            <div><select name="" id="select_box_2" onchange="on_color_change_5()">
+                    <option value="require" style="display: none">Requirement</option>
+                    <option value="personal">PERSONAL</option>
+                    <option value="business">BUSINESS</option>
+                    <option value="houseshifting">HOUSE SHIFTING</option>
+                </select></div>
+        </div>
+
+
+        <div>
+            <button onclick="show_error()">GET ESTIMATE</button>
+        </div>
+    </div>
+
+
+    <!-- pickup and drop anywhere part start here  -->
+
+    <div id="pickup">
+
+        <div>
+
+            <div class="left_side">
+
+                <div>1</div>
+                <div class="text_left">
+
+                    <div>Pickup and drop anywhere within the city</div>
+                    <div>Choose your pickup & drop location from within the city</div>
+
+                    <div>Download the Porter app on</div>
+
+                    <div id="img_parent">
+                        <div><img
+                                src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/064db81ca0ea310731f96e53580dcc99.svg"
+                                alt=""></div>
+
+                        <div><img
+                                src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/7d201f8ab29758060a506b8f5ca8802e.svg"
+                                alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="left_side">
+
+                <div>2</div>
+                <div class="text_left">
+
+                    <div>Choose vehicle of your choice</div>
+                    <div>Get quotes for vehicles which can carry from 20 kgs to 2000 kgs and book instantly without any
+                        waiting</div>
+
+                </div>
+            </div>
+
+            <div class="left_side">
+
+                <div>3</div>
+                <div class="text_left">
+
+                    <div>Real time tracking</div>
+                    <div>Our verified partner will ensure that your goods are transported safely to the destination. You
+                        can monitor the trip with live vehicle tracking and regular sms/email updates from our MOBILE
+                        APP or TRACK ORDER HERE.
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="offer">WHAT WE OFFER</div>
+            <div class="bar_div"></div>
+
+            <div id="offer_2">WHAT PEOPLE SAY</div>
+            <div class="bar_div_2"></div>
+
+        </div>
+        <div>
+            <div> <img src="" alt="" name="slide_2" width="100%" id="slide_div_2"></div>
+            <img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/13335fea484d886ba6668bd313f470c4.png"
+                alt="iphone frame">
+
+
+        </div>
+    </div>
+    <!-- rotate div 1 -->
+    <div>
+    <div id="rotate_div_1">
+
+        <div id="image_rotate">
+
+            <div class="round_img">
+                <div><img src="hassfree.png" alt=""></div>
+                <div>Hassle-Free truck rental</div>
+                <div>Book mini truck online. Whenever you need, wherever you need</div>
+            </div>
+
+            <div class="round_img">
+                <div><img src="pricing.png" alt=""></div>
+                <div>Transparent Pricing</div>
+                <div>Enjoy the most affordable rates in town with our transparent pricing</div>
+            </div>
+
+
+            <div class="round_img">
+                <div><img src="realtime.png" alt=""></div>
+                <div>Realtime Tracking</div>
+                <div>Track your goods movement across the city with our app</div>
+            </div>
+
+            <div class="round_img">
+                <div><img src="safe.png" alt=""></div>
+                <div>Safe and Reliable Trucks</div>
+                <div>Superior safety ensured with our team of verified & trained partners</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- rotate div 2 start here -->
+
+    <div id="rotate_div_2">
+
+
+        <div id="image_card">
+
+            <div class="image_card_1">
+
+                <div class="text_image_card">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-tBRcYFZErBs8JiFUUWAmyq3lZKNJ2M7vw&usqp=CAU"
+                            alt=""></div>
+                    <div>“Way better than naaka waalas. Have shifted all my logistics needs to Porter and I can now
+                        safely focus on my business growth. Amazing service!”</div>
+                    <div><img src="vinay.png" alt=""></div>
+                </div>
+
+                <div class="name_user">
+                    <div>VINAY</div>
+                    <div>Bangalore</div>
+                </div>
+            </div>
+
+            <div class="image_card_1">
+
+                <div class="text_image_card text_image_card_1">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-tBRcYFZErBs8JiFUUWAmyq3lZKNJ2M7vw&usqp=CAU"
+                            alt=""></div>
+                    <div>“Excellent service by multiple drivers. I own a business and do multiple shiftings. Rather than
+                        ask local drivers and bargain every time, I use porter which fulfils all my need. Thanks a lot!”
+                    </div>
+                    <div><img src="dinesh.png" alt=""></div>
+                </div>
+
+                <div class="name_user">
+                    <div>DINESH</div>
+                    <div>Mumbai</div>
+                </div>
+            </div>
+            <div class="image_card_1">
+
+                <div class="text_image_card text_image_card_1">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8-tBRcYFZErBs8JiFUUWAmyq3lZKNJ2M7vw&usqp=CAU"
+                            alt=""></div>
+                    <div>“Have had an amazing experience. Had three successful deliveries where it’s a struggle to
+                        arrange a tempo service for your desired pickup and drop off. Must try this app!”</div>
+                    <div><img src="ashok.png" alt=""></div>
+                </div>
+
+                <div class="name_user">
+                    <div>ASHOK</div>
+                    <div>Delhi NCR</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+        <!-- pickup and drop anywhere part end here  -->
+
+
+        <div id="emp_div">
+
+            <div id="empty_div_white"></div>
+            <div id="select_city">Select City</div>
+            <div id="porter_for_you">
+                <div><b>PORTERS FOR YOU</b>
+                    <div class="bar_div_color"></div>
+                </div>
+                <div id="border_select"><select id="box_select">
+                        <option value="bangalore">BANGALORE</option>
+                        <option value="delhi">DELHI</option>
+                        <option value="hyderabad">HYDERABAD</option>
+                        <option value="chennai">CHENNAI</option>
+                        <option value="pune">PUNE</option>
+                        <option value="">MUMBAI</option>
+                        <option value="">AHMEDABAD</option>
+                        <option value="">PUNE</option>
+                        <option value="surat">SURAT</option>
+                        <option value="">KOLKATA</option>
+                        <option value="">JAIPUR</option>
+                        <option value="">LUCKNOW</option>
+                        <option value="">COIMBATORE</option>
+                    </select></div>
+        
+            </div>
+        
+            <div id="show_parent_1">
+                <div class="bangalore_div">
+                    <div><img src="tataAce.png" alt="" id="tata_ACE"></div>
+                    <div>TATA ACE</div>
+                </div>
+                <div class="bangalore_div">
+                    <div><img src="aceHelper.png" alt="" id="ace_image"></div>
+                    <div>ACE HELPER</div>
+                </div>
+                <div class="bangalore_div">
+                    <div><img src="tata407.png" alt="" id="tata_407"></div>
+                    <div>TATA 407</div>
+                </div>
+                <div class="bangalore_div">
+                    <div><img src="tatabold.png" alt="" id="pick_up"></div>
+                    <div>PICKUP 8FT</div>
+                </div>
+                <div class="bangalore_div">
+                    <div><img src="3Wheeler.png" alt="" id="three_wheeler"></div>
+                    <div>3 WHEELER</div>
+                </div>
+                <div class="bangalore_div">
+                    <div><img src="3WheelerHelper.png" alt="" id="three_wheeler_helper"></div>
+                    <div>3 WHEELER (HELPER)</div>
+                </div>
+                <!-- <div class="bangalore_div">
+                    <div><img src="2Wheeler.png" alt=""></div>
+                    <div>2 WHEELER</div>
+                </div> -->
+            </div>
+            <div id="show_parent"></div>
+        
+            <div id="show_info">
+                <div><img
+                        src="https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/large_vehicles/tata_ace-e92a36b3508e6e3b1804fd2015adbfb6c948bc35afab36699440785ed83b5b24.png"
+                        alt="" id="change_image"></div>
+                <div id="show_info_1">
+                    <div id="change_name">RENT TATA ACE</div>
+                    <div id="show_info_price">
+                        <div>Fares starting from </div>
+                        <div id="rent_price_show">₹ 200</div>
+                    </div>
+        
+                    <div>Base fare includes 1 km distance and <span id="base_price">70</span> minutes of time.
+                        Pricing may vary based on your locality.
+                        Road tax, parking etc as applicable over and above ride fare.</div>
+        
+                    <div>KNOW MORE <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg> </div>
+                </div>
+                <div>
+                    <div class="kg_style_box">
+                        <div>Capacity:</div>
+                        <div id="kg_price">750 kg</div>
+                    </div>
+                    <div class="kg_style_box">
+                        <div>Size(LxBxH):</div>
+                        <div id="size_LBH"> 7ft x 4ft x 5ft</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+
+        <script src="header.js"></script>
+        <script src="estimate.js"></script>
+        <script src="pickup.js"></script>
+        <script src="porterYou.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+ // } else if (dropOf === "" && mobile_number === "") {
+    //     //dropoff input
+    //     errdropoff.innerText = "Enter dropoff address";
+    //     errdropoff.style.border = "1px solid red";
+    //     errdropoff.style.backgroundColor = "white";
+    //     errdropoff.style.color = "red";
+    //     errdropoff.style.textAlign = "center";
+    //     errdropoff.style.width = "15%";
+    //     errdropoff.style.marginLeft = "5%";
+    //     errdropoff.style.fontSize = "13px";
+    //     errdropoff.style.padding = "2px";
+    //     errdropoff.style.borderRadius = "5px";
+    //     errDiv_2.style.border = "1px solid red";
+    //     // mobile number input
+    //     errmobilenum.innerText = "Enter mobile number";
+    //     errmobilenum.style.border = "1px solid red";
+    //     errmobilenum.style.backgroundColor = "white";
+    //     errmobilenum.style.color = "red";
+    //     errmobilenum.style.textAlign = "center";
+    //     errmobilenum.style.width = "15%";
+    //     errmobilenum.style.marginLeft = "5%";
+    //     errmobilenum.style.fontSize = "13px";
+    //     errmobilenum.style.padding = "2px";
+    //     errmobilenum.style.borderRadius = "5px";
+    //     errDiv_3.style.border = "1px solid red";
+    // }
+    // else if (mobile_number === "") {
+    //     // mobile number input
+    //     errmobilenum.innerText = "Enter mobile number";
+    //     errmobilenum.style.border = "1px solid red";
+    //     errmobilenum.style.backgroundColor = "white";
+    //     errmobilenum.style.color = "red";
+    //     errmobilenum.style.textAlign = "center";
+    //     errmobilenum.style.width = "15%";
+    //     errmobilenum.style.marginLeft = "5%";
+    //     errmobilenum.style.fontSize = "13px";
+    //     errmobilenum.style.padding = "2px";
+    //     errmobilenum.style.borderRadius = "5px";
+    //     errDiv_3.style.border = "1px solid red";
+
+    // }
