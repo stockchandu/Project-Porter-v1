@@ -1,7 +1,5 @@
 #porter_for_you {
     width: 100%;
-    /* height: ; */
-    /* border: 1px solid red; */
     display: flex;
 }
 
@@ -49,7 +47,6 @@
 #select_city {
     width: 60px;
     height: 15px;
-    /* background-color: black; */
     position: absolute;
     margin: 7px 0 0 87%;
     font-size: 10px;
@@ -61,8 +58,6 @@
     height: auto;
     margin-top: 40px;
     margin-bottom: 30px;
-    /* cursor: pointer; */
-    /* border: 1px solid red; */
 }
 
 #parent_select_box {
@@ -70,7 +65,6 @@
     height: auto;
     margin-top: 10px;
     margin-left: 30px;
-    /* border: 1px solid red; */
     display: flex;
     
    
@@ -78,10 +72,8 @@
 
 #parent_select_box>div {
     width: 300px;
-    /* height: 150px; */
     margin-left: 5px;
     cursor: pointer;
-    /* border: 1px solid black; */
 }
 
 
@@ -93,10 +85,8 @@
 
 .sub_parent1>div {
     width: 200px;
-    /* background-color:red; */
     border-radius: 50px;
     margin-bottom: 5px;
-    /* background-color:red; */
 }
 
 .sub_parent1>div>p {
@@ -110,7 +100,6 @@
     width: 100%;
     height: auto;
     margin-top: 30px;
-    /* background-color: red; */
     display: flex;
    
 }
@@ -119,7 +108,6 @@
 
     width: 200px;
     height: 200px;
-    /* background-color:blue; */
     margin-left: 30px;
     
     
@@ -133,7 +121,6 @@
 
 .bangalore_div>div:nth-child(2) {
     width: 130px;
-    /* background-color:red; */
     margin-left: 40px;
     font-size: 15px;
     font-weight: 700;
@@ -159,8 +146,6 @@
 
     width: 50%;
     margin-left: 5%;
-
-    /* border: 1px solid blue; */
     height: 400px;
 }
 
@@ -174,7 +159,6 @@
     width: 24%;
     margin-left: 1%;
     margin-top: 5%;
-    /* border: 1px solid blue; */
     height: 400px;
 }
 
@@ -187,7 +171,6 @@
     width: auto;
     height: 30px;
     margin: 10px 0 50px 0;
-    /* border: 1px solid red; */
     font-size: 25px;
     font-weight: 600;
     color: black;
@@ -208,11 +191,9 @@
     width: auto;
     height: auto;
     margin: 25px 0 20px 0;
-    /* border: 1px solid red; */
     font-size: 12px;
     line-height: 1.9;
     color: rgb(83, 82, 79);
-    /* background-color: white; */
 }
 
 #show_info_1>div:nth-child(4) {
