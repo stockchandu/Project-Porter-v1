@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web RegularTitillium Web SemiBold";
+}
+    #parent_header {
+        width: 100%;
+        background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
+        height: 70px;
+        display: flex;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+        position: fixed;
+        top: 0;
+        --vh: 6.54px;
+    }
+
+    #parent_header>div:nth-child(1) {
+        width: 15%;
+        height: 100%;
+        /* background-color: red; */
+    }
+
+    /* logo style */
+    #parent_header>div:nth-child(1)>img {
+        width: 70%;
+        height: 100%;
+        margin-left: 15%;
+    }
+
+    #parent_header>div:nth-child(2) {
+        width: 30%;
+        /* background-color: red; */
+    }
+
+    #parent_header>div:nth-child(2)>p {
+
+        color: white;
+        margin: 6% 0;
+        font-size: 1.2vw;
+    }
+
+
+    /* drive car style */
+    #parent_header>div:nth-child(3) {
+        height: 5vh;
+        margin: 1% 0 0 68.7%;
+        position: absolute;
+
+    }
+
+    #parent_header>div:nth-child(4) {
+        width: 10%;
+        height: 6vh;
+        background-color: #FEDF00;
+        margin: 1% 0 0 25%;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #parent_header>div:nth-child(5) {
+        height: 2.3vh;
+        margin: 1% 0 0 0;
+        padding: 0.8%;
+        color: #FEDF00;
+        border-right: 1px solid #FEDF00;
+        border-top: 1px solid #FEDF00;
+        border-bottom: 1px solid #FEDF00;
+        border-radius: 3px;
+    }
+
+    #parent_header>div:nth-child(6) {
+        height: 2.3vh;
+        padding: 0.5%;
+        margin: 1% 0 0 0.5%;
+    }
+
+    #parent_header>div:nth-child(6)>img {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    #parent_header>div:nth-child(7) {
+        color: white;
+        height: 2.3vh;
+        margin-top: 1%;
+    }
+
+    #parent_header>div:nth-child(7)>p {
+        font-size: 20px;
+    }
+
+    /* header all style end here from line 19 to 102 */
+/* 
+    /* second header style start here */
+     #header_1_1 {
+        width: 100%;
+        height: 8vh;
+        margin-top: 5%;
+        display: flex;
+        /* flex-direction: column; */
+        border-bottom: 1px solid rgb(236, 236, 236);
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+
+    } 
+
+    #header_1_1>div {
+        padding: 1%;
+
+    }
+
+    #header_1_1>div:nth-child(1) {
+        margin-left: 1%;
+    }
+
+    #header_1_1>div:nth-child(5) {
+        margin-left: 48%;
+    }
+
+    /* second headers style end here from line 105 to 127 */
+
+
+
+
+
+    /*  header css end */
+
+.top-banner{
+    margin-top: 20px;
+}
+
+#img-banner {
+        width: 100vw;
+        height: 309px;
+}
+
+.banner-title {
+        position: absolute;
+        top: 10rem;
+        left: 10rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #5e0be0;
+        margin: 0;
+        width: 70%;
+        height: 10%;
+}
+
+/* css 2nd part end*/
+
+
+                #form-enterprize {
+                        background-color: #fedf00;
+                        width: 17rem;
+                        border-radius: 2px;
+                        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        flex-direction: column;
+                        padding: 14px 18px;
+                        position: absolute;
+                        right: 40px;
+                        top:35%;
+                      
+                }
+
+                h2 {
+                        text-align: center;
+                }
+
+                input {
+                        width: 99%;
+                        margin-top: 25px;
+                        height: 30px;
+
+                }
+
+                select {
+                        width: 100%;
+                        margin-top: 25px;
+                        height: 35px;
+                        /* border-color: #FFFFFF; */
+                        background-color: white;
+                }
+
+                input :focus {
+                        outline: none !important;
+                        border-color: 10px solid black;
+
+                }
+
+
+                #Request-callback {
+                        background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
+                        border: 1px solid #E0C600;
+                        border-radius: 2px;
+                        padding: 7px 20px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                        margin-top: 25px;
+                        width: 100%;
+                }
+
+                .formerror {
+                        color: red;
+                        position: absolute;
+                        /* top: 150px; */
+                        z-index: auto;
+                }
+/*  form css end here*/
+
+/* feature css */
+.feature-container {
+    background-color: #EDEAFD;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 371px;
+    
+}
+
+.title {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.feature {
+    padding: 20px 20px 20px 0px;
+   display: flex;
+   flex-direction: column;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #4632EE;
+}
+
+.feature-cont {
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+    height: 300px;
+    width: 250px;
+   padding-left: 30px;
+    text-align: center;
+}
+
+
+
+.feature-img1 {
+    background-image: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/52272a62d30843e713534b3b69319d74.svg");
+    height: 12rem;
+    width: 12rem;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+     background-position: -17rem;
+}
+
+.feature-img2 {
+    background-image: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/52272a62d30843e713534b3b69319d74.svg");
+    height: 12rem;
+    width: 12rem;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+    background-position: -52rem;
+}
+
+.feature-img3 {
+    background-image: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/52272a62d30843e713534b3b69319d74.svg");
+    height: 12rem;
+    width: 12rem;
+    background-size: 100rem;
+   background-position: -88rem;
+}
+
+
+
+/* feature css end here*/
+
+
+
+/* GROWING NETWORK css start here */
+
+
+.network {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 15px 40px;
+    justify-content: center;
+    height: 40vh;
+
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #4632EE;
+}
+
+.network-feature {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 2rem 5rem 5rem 2rem;
+}
+
+#network_title {
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.network-feature h1 {
+    color: #4632EE;
+    font-size: 3.4rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.network-feature p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.description {
+    margin-top: 7rem;
+   font-size: 1rem;
+}
+
+
+/* GROWING NETWORK css end here */

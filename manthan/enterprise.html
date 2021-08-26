@@ -7,39 +7,218 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>On Demand delivery service for businesses | Porter for Enterprise</title>
 
-        <style>
-                * {
-                        margin: 0;
-                        padding: 0;
-                }
-
-                #img-banner {
-                        width: 100vw;
-                        height: 309px;
-                }
-                
-                .banner-title {
-                        position: absolute;
-                        top: 1.1rem;
-                        left: 10rem;
-                        font-size: 2.2rem;
-                        font-weight: 700;
-                        color: #5e0be0;
-                        margin: 0;
-                        width: 70%;
-                        height: 10%;
-                }
-        </style>
-
+        <link rel="stylesheet" href="enterprise.css">
 </head>
 
 <body>
+
+        
+
+    <div id="parent_header">
+
+        <div> <img
+                src="https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/logo_white-d8f19cc9b973937a42b6c6ffadfd1f05256da698ee3ff194ac9fd72d0efdc1aa.svg"
+                alt=""></div>
+
+        <div>
+            <p>India's Largest Marketplace for Intracity Logistics</p>
+        </div>
+
+        <div><img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/9e4ccae9c5a1b669d8fa2648db220c3f.svg"
+                alt=""></div>
+
+        <div>
+            <p>DRIVE WITH US</p>
+            <span>turn kms into money</span>
+        </div>
+
+        <div>
+            <p>JOIN US</p>
+        </div>
+
+        <div> <img src="call.png" alt=""></div>
+        <div>
+            <p>4410-4410</p>
+            <span>add your city code</span>
+        </div>
+
+
+    </div>
+
+    <div></div>
+    <div id="header_1_1">
+        <div>CITY TEMPO</div>
+        <div>PACKERS & MOVERS</div>
+        <div>DRIVER PARTNERS</div>
+        <div>FOR ENTERPRISE</div>
+        <div>Support</div>
+        <div>Track Order</div>
+    </div>
+
         <div class=top-banner>
+            <div class="banner-title">Transform your Enterprise Business with Porter Deliveries</div>
                 <img id="img-banner"
                         src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/37e0d89461ca39f25e6b9d5efbbbceea.png"
                         alt="">
-                <div class="banner-title">Transform your Enterprise Business with Porter Deliveries</div>
+                
         </div>
+
+
+
+        <div id="form-enterprize">
+            <div id="thankyou"></div>
+            <div class="formdesign">
+                    <h2>FOR ENTERPRISES</h2>
+            </div>
+
+
+            <form action="">
+                    <!-- name="myform" onsubmit="validateForm()" method="post" -->
+                    <div class="formdesign">
+                            <select id="city">
+                                    <option >Select city</option>
+                                    <option value="MUMBAI">MUMBAI</option>
+                                    <option value="DELHI NCR">DELHI NCR</option>
+                                    <option value="BANGALORE">BANGALORE</option>
+                                    <option value="HYDERABAD">HYDERABAD</option>
+                                    <option value="PUNE">PUNE</option>
+                                    <option value="CHENNAI">CHENNAI</option>
+                            </select>
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+
+                    <div class="formdesign">
+
+                            <input id="PersonName" type="text" placeholder="Contact Person" required>
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+
+                    <div class="formdesign">
+                            <input id="CompanyName" type="text" placeholder="Company name">
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+
+                    <div class="formdesign">
+                            <input type="number" placeholder="+91-" id="number">
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+                    <div class="formdesign">
+                            <select id="MontlyTrip">
+
+                                    <option value="Montlytrip">Montly trip</option>
+                                    <option value="None">None</option>
+                                    <option value="0-50">0-50</option>
+                                    <option value="50-100">50-100</option>
+                                    <option value="More-than 100">More-than 100</option>
+
+                            </select>
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+                    <div class="formdesign">
+                            <input id="Email" type="Email" placeholder="Email address">
+                            <b>
+                                    <div class="formerror"></div>
+                            </b>
+                    </div>
+
+            </form>
+
+            <button onclick="validateForm()" type="submit" id="Request-callback">REQUEST CALLBACK</button>
+
+
+
+    </div>
+
+    <!-- feature content -->
+    <div class="feature-container">
+        <div class="title"> Why use Porter for Enterprise?</div>
+        <div class="bar"></div>
+        <div class="feature-cont">
+                <div class="feature">
+                       <div class="feature-img"> <div class="feature-img1"></div></div>
+                        <div class="feature-info">
+                                <h3>Pay per use</h3>
+                                <div class="desc">
+                                        No fixed montly contracts.Pay only for time &distance you use
+                                </div>
+                        </div>
+                </div>
+                <div class="feature">
+                        <div class="feature-img"> <div class="feature-img2"></div></div>
+                        <div class="feature-info">
+                                <h3>Greater Control</h3>
+                                <div class="desc">
+                                        Get visibility of all your hub level logistics movement.
+                                </div>
+                        </div>
+                </div>
+                <div class="feature">
+                        <div class="feature-img"> <div class="feature-img3"></div></div>
+                                <h3>Hassle Free Accounting</h3>
+                                <div class="desc">
+                                        Get rid of order level payment & reimbursement. Pay centrally for Pan
+                                        India usage.
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+
+
+        <!-- our growing network -->
+        <div class="network">
+                <div class="network_cont">
+
+                        <div id="network_title">OUR GROWING NETWORK</div>
+                        <div class="bar"></div>
+                        <div class="network-feature">
+                                <div>
+                                        <h1>9</h1>
+                                        <p>CITIES</p>
+                                </div>
+                                <div>
+                                        <h1>2000+</h1>
+                                        <p>VEHICLE BASE</p>
+                                </div>
+                                <div>
+                                        <h1>500+</h1>
+                                        <p>DRIVER PARTNERS</p>
+                                </div>
+                                <div>
+                                         <h1>60,000+</h1>
+                                        <p>TRIPS PER MONTH</p>
+                                </div>
+                        </div>
+                        <div class="description">Our business is growing by the minute! We are now present in eight
+                                cities and have an extensive fleet base of 2000 plus vehicles. We run more than 60,000
+                                trips in a month! Our loyal customers across 8 cities serve as a testament of our top
+                                notch service and ever expanding presence.</div>
+                </div>
+                <div id="img_cont">
+                        <img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/9bbfd28dd5ad59178779fc05ed7d1c29.svg"
+                                alt="">
+                </div>
+        </div>
+</div>
+
+
+
+<!-- GROWING NETWORK end here -->
+
+   
+
 </body>
 
 </html>
+<script src="enterprise.js"></script>
