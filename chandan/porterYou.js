@@ -224,7 +224,7 @@ function tata_help_ace() {
 }
 document.getElementById("ace_image").addEventListener("click", Ace_Helper);
 document.getElementById("tata_407").addEventListener("click", tata_407);
-document.getElementById('pick_up').addEventListener("click", pick_up_8FT)
+document.getElementById("pick_up_2").addEventListener("click", pick_up_8FT)
 document.getElementById('three_wheeler').addEventListener("click", three_wheeler_single)
 document.getElementById('three_wheeler_helper').addEventListener("click", three_wheeler_help_person)
 document.getElementById('tata_ACE').addEventListener("click", tata_help_ace)
