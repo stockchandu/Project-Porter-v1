@@ -1,0 +1,425 @@
+*{
+    margin: 0%;
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+}
+#register {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partner_hero_banner-3620167036690f9db1bb979b43b863835305dfdfb08c97584baa3de7727002c4.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+#right {
+    float: right;
+    width: 25%;
+    margin-right: 4%;
+    position: absolte;
+}
+
+#details {
+    background-color: rgb(254,223,0);
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+    word-wrap: break-word;
+    height: 70%;
+}
+#extradiv{
+    background-color: rgb(254,223,0);
+    height: 70%;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+#tk{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 5%;
+}
+#white{
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    border-radius: 5px;
+    height: 50px;
+   width: 200px;
+   margin-top: 30px;
+}
+#entername{
+    height: 20%;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5%;
+}
+#bk{
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+
+input{
+    padding: 8%;
+    margin: 2%;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 96%;
+    height: 30px;
+
+}
+
+select {
+    width: 47%;
+    height: 38px;
+    margin: 5px 2px;
+    border-radius: 3px;
+    color: gray;
+    border: none;
+    padding: 2%;
+    height: 50px;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+#hearabout select {
+    width: 97%;
+    margin: 5px;
+    margin-bottom: 5%;
+}
+
+#downloadapp {
+    text-align: center;
+    margin-top: 20%;
+
+}
+
+#downloadapp>button {
+    word-wrap: break-word;
+    background-image: linear-gradient(#2962ff, #5e0be0);
+    color: #ffffff;
+    width: 80%;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+}
+
+#downloadapp p {
+    margin: 5px;
+}
+
+#downloadapp h2 {
+    margin-bottom: 10px;
+}
+
+#content {
+    float: left;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 4%;
+    word-wrap: break-word;
+}
+
+#content>h1 {
+    color: #5e0be0;
+    font-size: 50px;
+    margin-bottom: 6px;
+}
+#regis{
+    height: 50px;
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    color: white;
+    width: 90%;
+    border-radius: 8px;
+}
+
+#content>p {
+    font-size: 20px;
+    margin: 0px;
+}
+
+
+/* Second div */
+#ptrcontainer {
+    width: 70%;
+    display: flex;
+    margin-top: 5%;
+}
+
+#ptrcolor {
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    width: 30px;
+    height: 4px;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+#ptradvt {
+    margin-top: 70px;
+}
+
+#ptradvt>h2 {
+    text-align: center;
+}
+
+.ptrbox {
+    width: 32%;
+    margin-left: 10px;
+}
+
+.ptrimg {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partner_features-b0f58d39a52d583c770d33353372979ce1bdb0975a8139955b0ddf1f4e4003c1.svg");
+    height: 180px;
+    width: 65%;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+#box1 {
+    background-position: 0em;
+}
+
+#box2 {
+    background-position: -18em;
+}
+
+#box3 {
+    background-position: -36em;
+}
+
+.ptrbox {
+    text-align: center;
+}
+
+/* third div */
+#lifeasycontr {
+    border: 1px solid black;
+}
+
+#lifeasycont {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0px 80px;
+}
+
+#easy_under_dash {
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+#lifebox {
+    display: flex;
+    border: 1px solid black;
+    height: 400px;
+}
+
+#lifeimg {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partners/driver_experience-87051334459376357b6125e2b776e61175461d3db60f2a5fdad972d51839137e.gif");
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 60px 20px;
+    position: relative;
+}
+
+#lifecontent {
+    margin: 0px 30px;
+    color: black;
+}
+
+/* #lifeasycontr{
+background-image:linear-gradient(111deg, #2962ff, #5e0be0);
+transform-origin:right ;
+transform: skewY(0deg);
+positin:absolute;
+} */
+
+/* fouth div */
+#benefcontainer {
+
+    width: 95%;
+    margin: auto;
+}
+
+#benefbkg {
+    background-image: linear-gradient(95deg, #2962ff, #5e0be0);
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#benef {
+    margin: auto;
+    display: flex;
+}
+
+.benefbox {
+    width: 32%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.benefimg {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partner_benefits-cf36020c5e935423d10b6b588ad664dad9acf72ecabd82c77f79699e6b653b5d.svg");
+    height: 180px;
+    width: 73%;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+#benefimg1 {
+    background-position: 0em;
+}
+
+#benefimg2 {
+    background-position: -18em;
+}
+
+#benefimg3 {
+    background-position: -36em;
+}
+
+#benefimg4 {
+    background-position: -53em;
+}
+
+
+/* Sixth div  */
+#multivehiclecont {
+    width: 95%;
+    margin: auto;
+}
+
+#multivehiclebkg {
+    background-image: linear-gradient(95deg, #2962ff, #5e0be0);
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#mutlivehiclebox {
+    display: flex;
+}
+
+#mutlivehicleimg img {
+    margin-left: 20%;
+    width: 70%;
+}
+
+#multivehiclecontent {
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#mutibtn {
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    border: none;
+    height: 50px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+
+/* Fifth div */
+#chnglifeslide {
+    position: absolute;
+
+    transform-origin: bottom right;
+    transform: skewY(6deg);
+    z-index: 0;
+    opacity: 0.4;
+    background-image: linear-gradient(111deg, #2962ff, #5e0be0);
+}
+
+#changelifehead {
+    margin-left: 70px;
+}
+
+#under_dash {
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#chnglifebox {
+    margin: 20px;
+    display: flex;
+}
+
+.chngsemicol {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/parcel_assets-58614ff7017f542b7a34e9db37d1cfe92a0228e42a228bffc48aca1ff7883492.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    background-position: -57em;
+    margin-left: 265px;
+    margin-bottom: -62em;
+}
+
+.chnglifeimg {
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
+    ;
+    margin: 10px;
+    width: 30%;
+    border-top: 24px solid #fedf00;
+    border-bottom: 24px solid #fedf00;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+}
+
+.chnglifecontent p {
+    margin: 50px 15px;
+}
+
+.chnglifefedbck {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.chnglifefedbck p {
+    margin: 4px;
+    color: #5e0be0;
+}
+
+.chngsmalltext {
+    font-size: 14px
+}
+
+.chnglargetext {
+    font-weight: 600
+}
+
+.chnglifephoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partners/partner_testimonial-50c51bfe5b65f8e4628b8d59d03345c282dec8112368312c287aa2b234689e33.png");
+    background-size: auto 100%;
+    margin-left: 16px;
+    margin-right: 10px;
+}
+
+#chngphoto1 {
+    background-position: 0em;
+}
+
+#chngphoto2 {
+    background-position: -4em;
+}
+
+#chngphoto3 {
+    background-position: -7.5em;
+}
