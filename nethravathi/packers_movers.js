@@ -50,19 +50,23 @@ function proceed() {
 
    if (name.length === 0 || name.length<3) {
            document.getElementsByClassName("formerror")[1].innerHTML ="Length is too short" ;
+       document.getElementsByTagName("input")[1].style.marginTop = "1.5%";
            returnval = false;
    }
    
    if(phnumber.length<10){
            document.getElementsByClassName("formerror")[2].innerHTML ="Enter Valid Mobile number!" ;
+       document.getElementsByTagName("input")[2].style.marginTop = "1.5%";
            returnval = false;
    }
    if(from.length === 0){
            document.getElementsByClassName("formerror")[3].innerHTML ="Enter the initial location" ;
+       document.getElementsByTagName("input")[3].style.marginTop = "1.5%";
            returnval = false;
    }
    if(to.length === 0){
     document.getElementsByClassName("formerror")[4].innerHTML ="Select the destination" ;
+       document.getElementsByTagName("input")[4].style.marginTop = "1.5%";
     returnval = false;
     }
 
