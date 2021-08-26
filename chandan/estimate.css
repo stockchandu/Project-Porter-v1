@@ -1,13 +1,14 @@
 #get_estimate {
-    width: 100%;
+    width: 95%;
     display: flex;
-    background-color: #FFFFFF;
     height: 50px;
     border: 1px solid rgb(230, 228, 228);
     box-shadow: 0px 0px 15px 0px #888888;
     color: #353535;
     font-size: 12px;
-    opacity: 1;
+    margin:auto;
+    z-index: 4;
+
 }
 
 #get_estimate>div:nth-child(1) {
@@ -18,6 +19,8 @@
 #get_estimate>div {
     width: 25%;
     border-right: 1px solid rgb(204, 202, 202);
+    background-color:white;
+    opacity: 0.9;
 
 }
 
@@ -77,4 +80,27 @@
 
 #get_estimate>div>div:nth-child(1) {
     margin-left: 3%;
+}
+
+#show_error {
+    width: 100%;
+    display: flex;
+    margin-top: -6%;
+}
+
+#show_error>div {
+    width: 25%;
+    height: 20px;
+    margin-left: 1px;
+}
+
+#show_error>div:nth-child(1) {
+    width: 15%;
+    height: 20px;
+    margin-left: 1px;
+}
+
+#name_5{
+    height:13px;
+    visibility: hidden;
 }
