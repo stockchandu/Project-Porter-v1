@@ -1,0 +1,48 @@
+#as_feature_parent {
+    width: 100%;
+}
+
+#as_feature_parent>div:nth-child(1) {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#color_Hr {
+    background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
+    width: 2.5%;
+    height: 4px;
+    margin: 1% auto;
+    border-radius: 3px;
+
+}
+
+#as_feature_child {
+    display: flex;
+}
+
+.as_feature_sub_child {
+    width: 20%;
+    margin: auto;
+}
+
+.as_feature_sub_child>p {
+    width: 300px;
+    font-size: 12px;
+}
+
+#business_standard {
+    width: 30%;
+    margin: 15% 0 0 20%;
+}
+
+#time_india {
+    width: 90%;
+    margin: 15% 0 0 10%;
+}
+
+#the_hindu {
+    width: 35%;
+    margin: 15% 0 0 20%;
+}
