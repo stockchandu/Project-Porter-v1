@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    #growing_parent {
+        width: 100%;
+        height: 250px;
+        display: block;
+        background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
+    }
+
+    #growing_parent>div:nth-child(1) {
+        text-align: center;
+        font-size: 23px;
+        color: white;
+        padding-top: 50px;
+    }
+
+    #growing_parent>div:nth-child(2) {
+        display: flex;
+    }
+
+    #growing_parent>div:nth-child(2)>div {
+        width: 18%;
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    .value_cover>h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .value_cover>p {
+        margin-top: -5px;
+    }
+</style>
+
+<body>
+
+    <div id="growing_parent">
+
+        <div>We are growing big each passing day!</div>
+        <div>
+            <div class="value_cover">
+                <h1>12</h1>
+                <p>CITIES</p>
+            </div>
+            <div class="value_cover">
+                <h1>150,000+</h1>
+                <p>DRIVER PARTNERS</p>
+            </div>
+            <div class="value_cover">
+                <h1>4 Million+</h1>
+                <p>HAPPY CUSTOMERS</p>
+            </div>
+            <div class="value_cover">
+                <h1>16 Million+</h1>
+                <p>TRIPS SO FAR</p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
