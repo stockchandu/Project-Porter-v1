@@ -1,4 +1,12 @@
+let errpickup = document.getElementById("err_pick_up");
+let errdropoff = document.getElementById("err_drop_off");
+let errmobilenum = document.getElementById("err_mobile_num");
+let errrequirement = document.getElementById("err_requirement");
 
+let errDiv_1 = document.getElementById("err_div_1");
+let errDiv_2 = document.getElementById("err_div_2");
+let errDiv_3 = document.getElementById("err_div_3");
+let errDiv_4 = document.getElementById("err_div_4");
 function show_error() {
 
     let box_1 = document.getElementById("select_box_1").value;
@@ -8,20 +16,10 @@ function show_error() {
     let mobile_number = document.getElementById("mobile").value;
     let req_value = document.getElementById("select_box_2").value;
 
-    // upper div 
-    let errpickup = document.getElementById("err_pick_up");
-    let errdropoff = document.getElementById("err_drop_off");
-    let errmobilenum = document.getElementById("err_mobile_num");
-    let errrequirement = document.getElementById("err_requirement");
+    let mumbai = ["thane", "solapur", "navi", "juhu", "bandra"];
 
-    // input parent 
-    let errDiv_1 = document.getElementById("err_div_1");
-    let errDiv_2 = document.getElementById("err_div_2");
-    let errDiv_3 = document.getElementById("err_div_3");
-    let errDiv_4 = document.getElementById("err_div_4");
 
-    if (pickUp === "" || dropOf === "" || mobile_number === "" || req_value === "requirement") {
-        // pickup input
+    if (pickUp === "" || dropOf === "" || mobile_number === "" || req_value === "") {
         errpickup.innerText = "Enter pickup address";
         errpickup.style.border = "1px solid red";
         errpickup.style.backgroundColor = "white";
@@ -33,7 +31,7 @@ function show_error() {
         errpickup.style.padding = "2px";
         errpickup.style.borderRadius = "5px";
         errDiv_1.style.border = "1px solid red";
-        //dropoff input
+
         errdropoff.innerText = "Enter dropoff address";
         errdropoff.style.border = "1px solid red";
         errdropoff.style.backgroundColor = "white";
@@ -70,8 +68,8 @@ function show_error() {
         errrequirement.style.padding = "2px";
         errrequirement.style.borderRadius = "5px";
         errDiv_4.style.border = "1px solid red";
-
-    } else if (mobile_number.length != 10 || isNaN(mobile_number)) {
+    }
+    else if (mobile_number.length != 10 || isNaN(mobile_number)) {
         errmobilenum.innerText = "Enter correct number";
         errmobilenum.style.border = "1px solid red";
         errmobilenum.style.backgroundColor = "white";
@@ -85,65 +83,61 @@ function show_error() {
         errDiv_3.style.border = "1px solid red";
 
     }
-}
 
+    else {
 
+        for (let i = 0; i < mumbai.length; i++) {
+            if (box_1 === "mumbai" && pickUp === mumbai[i]) {
+                setTimeout(function(){
+                    window.location.href = "fare_estimate.html";
 
-function validate() {
-    let errpickup = document.getElementById("err_pick_up");
-    let errdropoff = document.getElementById("err_drop_off");
+                },2000);
+               
+                // break;
 
+            } else if (pickUp != mumbai[i]) {
 
-    let errDiv_1 = document.getElementById("err_div_1");
-    let errDiv_2 = document.getElementById("err_div_2");
+                setTimeout(function () {
+                    errpickup.innerText = "Enter radious city";
+                    errpickup.style.border = "1px solid red";
+                    errpickup.style.backgroundColor = "white";
+                    errpickup.style.color = "red";
+                    errpickup.style.textAlign = "center";
+                    errpickup.style.width = "15%";
+                    errpickup.style.marginLeft = "5%";
+                    errpickup.style.fontSize = "13px";
+                    errpickup.style.padding = "2px";
+                    errpickup.style.borderRadius = "5px";
 
-
-    let pickUp = document.getElementById("pick_up").value;
-    let dropOf = document.getElementById("drop_off").value;
-    let mumbai = [
-        {
-            city_1: "navi",
-            city_2: "thane",
+                }, 2000);
+            }
         }
-    ]
 
-
-    mumbai.forEach(function (ele) {
-
-        if (pickUp != ele.city_1 && dropOf != ele.city_2) {
-            errpickup.innerText = "Enter radious address";
-            errpickup.style.border = "1px solid red";
-            errpickup.style.backgroundColor = "white";
-            errpickup.style.color = "red";
-            errpickup.style.textAlign = "center";
-            errpickup.style.width = "15%";
-            errpickup.style.marginLeft = "5%";
-            errpickup.style.fontSize = "13px";
-            errpickup.style.padding = "2px";
-            errpickup.style.borderRadius = "5px";
-            errDiv_1.style.border = "1px solid red";
-        } else {
-            console.log("match")
-        }
-    })
-
+        data_location(pickUp,dropOf);
+    }
 
 
 }
+     
+function  data_location(pick,drop){
+
+      let city_store=[
+          {
+              pick_up:pick,
+              drop_of:drop,
+
+          },
+      ]
+
+      let convert_json=JSON.stringify(city_store);
+      localStorage.setItem("city_val",convert_json);
 
 
 
+    
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
 

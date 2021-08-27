@@ -81,11 +81,14 @@ function change_clr() {
         document.getElementById("show_parent").append(parent_div);
 
         first_parent_show.style.display = "none"
+        // first_parent_show.style.visibility = "hidden"
         get_btn_show(create_img_1, create_img_2, create_img_3, create_img_4);
     } else if (document.getElementById("box_select").value === "bangalore") {
         first_parent_show.style.display = "flex"
         image_change.src = "https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/large_vehicles/tata_ace-e92a36b3508e6e3b1804fd2015adbfb6c948bc35afab36699440785ed83b5b24.png";
-        document.getElementById("show_parent").style.display = "none"
+        document.getElementById("show_parent").style.visibility = "hidden"
+        // document.getElementById("show_parent").style.display = "none"
+        // first_parent_show.style.visibility = "visible"
     }
 
 }
