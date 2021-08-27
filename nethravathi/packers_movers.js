@@ -2,6 +2,24 @@
 function done(){
     document.getElementById("div3").style.display="none"; 
     document.getElementById("div1").style.display="block"; 
+
+    document.getElementsByClassName("formerror")[0].innerHTML ="" ;
+    document.getElementsByClassName("formerror")[1].innerHTML ="" ;
+    document.getElementsByClassName("formerror")[2].innerHTML ="" ;
+    document.getElementsByClassName("formerror")[3].innerHTML ="" ;
+    document.getElementsByClassName("formerror")[4].innerHTML ="" ;
+
+    var city =document.getElementById("city")
+    city.value = "";
+
+   var name = document.getElementById("PersonName");
+   name.value = "";
+   var phnumber = document.getElementById("number");
+   phnumber.value = "";
+   var from = document.getElementById("mfrom");
+   from.value = "";
+   var to = document.getElementById("mto");
+   to.value = "";
 }
 
 //FAQs
@@ -44,29 +62,30 @@ function proceed() {
   
    if(city.length == 0){
     document.getElementsByClassName("formerror")[0].innerHTML ="Select the city" ;
+    document.getElementsByTagName("input")[0].style.marginTop = "1%";
     returnval = false;
    }
 
 
    if (name.length === 0 || name.length<3) {
            document.getElementsByClassName("formerror")[1].innerHTML ="Length is too short" ;
-       document.getElementsByTagName("input")[1].style.marginTop = "1.5%";
+       document.getElementsByTagName("input")[1].style.marginTop = "1%";
            returnval = false;
    }
    
    if(phnumber.length<10){
            document.getElementsByClassName("formerror")[2].innerHTML ="Enter Valid Mobile number!" ;
-       document.getElementsByTagName("input")[2].style.marginTop = "1.5%";
+       document.getElementsByTagName("input")[2].style.marginTop = "1%";
            returnval = false;
    }
    if(from.length === 0){
            document.getElementsByClassName("formerror")[3].innerHTML ="Enter the initial location" ;
-       document.getElementsByTagName("input")[3].style.marginTop = "1.5%";
+       document.getElementsByTagName("input")[3].style.marginTop = "1%";
            returnval = false;
    }
    if(to.length === 0){
     document.getElementsByClassName("formerror")[4].innerHTML ="Select the destination" ;
-       document.getElementsByTagName("input")[4].style.marginTop = "1.5%";
+       document.getElementsByTagName("input")[4].style.marginTop = "1%";
     returnval = false;
     }
 
