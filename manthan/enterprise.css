@@ -170,6 +170,14 @@
                       
                 }
 
+                #thanks{
+                    text-align: center;
+            }
+            #thanks p{
+                   font-size: 1.2rem;
+            }
+            
+
                 #form-enterprize h2 {
                         text-align: center;
                 }

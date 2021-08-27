@@ -79,9 +79,37 @@ function validateForm() {
 
 
 
+
+
+        // let data="thank-you"
+
+
+
+        // creating thank you massage div
+
+        let data_div=document.getElementById("thanks");
+
+      
+                let div= document.createElement("p");
+                div.innerHTML="Thank you for contacting us";
+
+                let p_name=document.createElement("h2");
+                 p_name.innerText="Porter";
+
+                let lastline=document.createElement("p");
+                lastline.innerText="We will get back to You shortly";
+                
+
+                data_div.append(div,p_name,lastline);
+              
+                
+        
+
         if (returnval === true) {
-                document.getElementById("form-enterprize").innerHTML = "Thank you so much " + name + " of contacting Porter\n We will get back to you shortly ";
+                document.getElementById("form").innerHTML ="" ;
+                document.getElementById("thanks").style.display ="block";
         }
+        
 
         return returnval;
 }
