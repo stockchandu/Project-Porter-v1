@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Titillium Web RegularTitillium Web SemiBold";
+    font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
 }
     #parent_header {
         width: 100%;
@@ -12,6 +14,7 @@
         font-weight: bold;
         position: fixed;
         top: 0;
+        z-index: 10px;
         --vh: 6.54px;
     }
 
@@ -151,8 +154,11 @@
 
 
                 #form-enterprize {
+                        font-family: 'Titillium Web';
+                         font-style: normal;
+                        font-weight: 300;
                         background-color: #fedf00;
-                        width: 17rem;
+                        width: 18rem;
                         border-radius: 2px;
                         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
                         display: flex;
@@ -164,7 +170,7 @@
                       
                 }
 
-                h2 {
+                #form-enterprize h2 {
                         text-align: center;
                 }
 
@@ -293,8 +299,12 @@
     grid-template-columns: auto auto;
     margin: 15px 40px;
     justify-content: center;
-    height: 40vh;
 
+}
+.network_cont{
+    display: grid;
+    grid-template-rows: auto auto auto auto ;
+      
 }
 
 .bar {
@@ -303,11 +313,11 @@
     background-color: #4632EE;
 }
 
-.network-feature {
+.network-feature  {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    margin: 2rem 5rem 5rem 2rem;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto auto ;
+    margin: 0rem 5rem 0rem 2rem;
 }
 
 #network_title {
@@ -322,18 +332,97 @@
     font-size: 3.4rem;
     margin: 20px;
     text-align: center;
-}
+} 
 
 .network-feature p {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
-}
+} 
 
 .description {
-    margin-top: 7rem;
+    margin-top: 1rem;
    font-size: 1rem;
 }
 
 
 /* GROWING NETWORK css end here */
+/* GROWING NETWORK css end here */
+
+
+#bussiness_title {
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #4632EE;
+}
+
+.growing_bussiness {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin: 15px 40px;
+}
+
+.bussiness_cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2rem 8rem ;
+
+}
+
+.bussiness_cont div {
+    margin: 2rem;
+ 
+    width: 18rem;
+    padding-top: 2.4rem;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    padding: 2;
+}
+
+#big_bar {
+    height: 2rem;
+    width: 100%;
+    background-image: linear-gradient(94deg, #2962FF, #5e0be0);
+    margin-top: 3rem;
+}
+
+
+
+.maneger h2 {
+    padding: 0px 20px;
+    padding-top: 7.25rem;
+    color: #2962FF;
+    
+}
+.CEO h2 {
+    padding: 0px 20px;
+    padding-top: 6.1rem;
+    color: #2962FF;
+}
+
+.head h2{
+    padding: 0px 20px;
+    padding-top: 1.6rem;
+    color: #2962FF;
+    
+}
+
+
+
+
+.bussiness_positions{
+     color: #2962FF;
+     padding: 0.5rem 1.2rem;
+     
+}
+.bussiness_desc{
+    padding: 1rem;
+}
