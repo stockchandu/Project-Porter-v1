@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+}
+#register {
+    background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partner_hero_banner-3620167036690f9db1bb979b43b863835305dfdfb08c97584baa3de7727002c4.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+#right {
+    float: right;
+    width: 28%;
+    margin-right: 7%;
+    position: absolte;
+}
+
+#details {
+    background-color: rgb(254,223,0);
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+    word-wrap: break-word;
+    height: 70%;
+    padding:10px;
+}
+#extradiv{
+    background-color: rgb(254,223,0);
+    height: 70%;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+  padding:30px;
+}
+#tk{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 5%;
+}
+#white{
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    border-radius: 5px;
+    height: 50px;
+   width: 200px;
+   margin-top: 30px;
+  
+}
+#entername{
+    height: 20%;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5%;
+}
+#bk{
+    font-size: 20px;
+}
+#entername{
+  margin:20px 0px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+
+input{
+    padding: 5%;
+    margin: 0%;
+    margin-bottom: 5%;
+     border: none; 
+    border-radius: 1px;
+    outline: none; 
+    width: 86%;
+    height: 15px;
+
+}
+
+select {
+    width: 47%;
+    height: 38px;
+    margin: 0px 2px;
+    border-radius: 3px;
+    color: gray;
+    border: none;
+    padding: 5%;
+    height: 50px;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+#hearabout select {
+    width: 97%;
+    margin: 5px;
+    margin-bottom: 5%;
+}
+
+#downloadapp {
+    text-align: center;
+  margin:auto;
+    margin-top: 10%;
+  
+}
+
+#butn {
+     background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/mobile_app_badge-9bc17d1269926ca97c80c5f10c02f0a0d4ef17221f1b9ecc423baaf17c072b38.svg");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 1px;
+    margin-left:65px;
+    margin-top: 12px;
+    width: 250px;
+    height: 48px;
+    
+}
+
+#downloadapp p {
+    margin: 5px;
+}
+
+#downloadapp h2 {
+    margin-bottom: 10px;
+}
+
+#content {
+    float: left;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 4%;
+    word-wrap: break-word;
+}
+
+#content>h1 {
+    color: #5e0be0;
+    font-size: 50px;
+    margin-bottom: 6px;
+}
+#regis{
+    height: 50px;
+    background-image: linear-gradient(98deg, #2962ff, #5e0be0);
+    color: white;
+    width: 90%;
+    border-radius: 2px;
+}
+
+#content>p {
+    font-size: 20px;
+    margin: 0px;
+}
