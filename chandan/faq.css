@@ -1,0 +1,59 @@
+
+.collapsible {
+    color: rgb(82, 75, 75);
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #pl{
+      margin-left: 1%;
+      margin-top: 0;
+      font-size: 13px;
+  }
+  button{
+      background-color:white;
+  }  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+  .mar{
+      width: 50%;
+      margin: 1% auto;
+  }
+ 
+
+  #FAQ {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 1000;
+    margin-top: 130px;
+}
+
+#line_color {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 2% auto;
+    background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
+}
+
+
+.hr_line{
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 228, 228);
+    width: 90%;
+    height:1px;
+    margin-left: 3%;
+    
+}
+
+
