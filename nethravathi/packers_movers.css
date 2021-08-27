@@ -194,7 +194,8 @@ h1{
     line-height: 25px;
 }
 .form{
-    height: 450px;
+    height: auto;
+    padding-bottom: 20px;
     width: 350px;
     margin-top: 25%;
     margin-left: 88%;
