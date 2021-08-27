@@ -212,6 +212,7 @@ form >select,input{
     border-radius: 5px;
     margin-left: 5%;
     margin-top: 4%;
+    margin-bottom: 3%;
     border-color: rgb(180, 179, 179);
     border-style: solid;
 }
