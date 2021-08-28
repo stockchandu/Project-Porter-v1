@@ -6,6 +6,9 @@
   font-weight: 300;
   /* overflow-x:hidden; */
 }
+body{
+    overflow-x:hidden;
+}
 #parent_header {
     width: 100%;
     background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);

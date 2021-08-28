@@ -84,35 +84,51 @@ function validateForm() {
 
         // creating thank you massage div
 
-        let data_div=document.getElementById("thanks");
-
-      
-                let div= document.createElement("p");
-                div.innerHTML="Thank you for contacting us";
-
-                let p_name=document.createElement("h2");
-                 p_name.innerText="Porter";
-
-                let lastline=document.createElement("p");
-                lastline.innerText="We will get back to You shortly";
-
-                let button=document.createElement("button");
-                button.innerText="Get Another Quate";
-
-                
-                
-
-                data_div.append(div,p_name,lastline,button);
-              
-                
-        
-
         if (returnval === true) {
                 document.getElementById("form").innerHTML ="" ;
-                // document.getElementById("Email").innerHTML ="" ;
-                document.getElementById("thanks").style.display ="block";
+                document.getElementById("thanks").style.display ="block" ;
+
+               // thankyou()
+                
         }
         
 
         return returnval;
+}
+
+
+   // extra fuction
+
+// function thankyou(){
+//         let data_div=document.getElementById("thanks");
+
+      
+//                 let div= document.createElement("p");
+//                 div.innerHTML="Thank you for contacting us";
+
+//                 let p_name=document.createElement("h2");
+//                  p_name.innerText="Porter";
+
+//                 let lastline=document.createElement("p");
+//                 lastline.innerText="We will get back to You shortly";
+
+//                 let button=document.createElement("button");
+//                 button.innerText="Get Another Quote";
+
+//                 data_div.append(div,p_name,lastline,button);
+
+
+//                 document.getElementById("thanks").style.display ="block";
+         
+// }
+
+function scrollup() {
+        // document.body.scrollTop = 0; // For Safari
+        // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        // window. location. replace("enterprise.html") 
+        document.documentElement.scrollTop = 0;
+      } 
+
+function backToPage() {
+        window. location. replace("enterprise.html") 
 }
