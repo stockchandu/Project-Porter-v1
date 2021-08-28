@@ -247,8 +247,9 @@
 }
 
 .title {
-    font-size: 25px;
-    padding-bottom: 15px;
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
 }
 
 .feature {
@@ -343,7 +344,7 @@
     font-weight: 600;
     color: #212121;
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    padding-top: 5rem;
 }
 
 .network-feature h1 {
@@ -453,8 +454,9 @@
     margin: 15px 40px;
 }
 #industriestTitle {
-    font-size: 25px;
-    padding-bottom: 1rem;
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
 }
 
 .industriesCont {
