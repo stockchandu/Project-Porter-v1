@@ -95,9 +95,14 @@ function validateForm() {
 
                 let lastline=document.createElement("p");
                 lastline.innerText="We will get back to You shortly";
+
+                let button=document.createElement("button");
+                button.innerText="Get Another Quate";
+
+                
                 
 
-                data_div.append(div,p_name,lastline);
+                data_div.append(div,p_name,lastline,button);
               
                 
         

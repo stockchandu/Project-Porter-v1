@@ -4,6 +4,7 @@
     font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 300;
+  /* overflow-x:hidden; */
 }
 #parent_header {
     width: 100%;
@@ -174,10 +175,18 @@
 
                 #thanks{
                     text-align: center;
-            }
-            #thanks p{
+                }
+               #thanks p{
                    font-size: 1.2rem;
-            }
+                 }
+                 #thanks button{
+                     color:#2962FF;
+                     margin-top: 1rem;
+                     padding: 0.7rem 0.5rem;
+                     border: 1px solid #2962FF;
+                     font-size: medium;
+                     font-weight: 700;
+                 }
             
 
                 #form-enterprize h2 {
