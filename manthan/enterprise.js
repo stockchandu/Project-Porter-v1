@@ -26,7 +26,7 @@ function validateForm() {
                 document.getElementsByClassName("formerror")[0].innerHTML = "*Select the City";
                 returnval = false;
         } else if (City !== "Select city") {
-                document.getElementsByClassName("formerror")[0].innerHTML = "";
+                document.getElementsByClassName("formerror")[0].innerHTML ="";
 
         }
 
@@ -78,9 +78,6 @@ function validateForm() {
         }
 
 
-
-
-
         // let data="thank-you"
 
 
@@ -98,15 +95,21 @@ function validateForm() {
 
                 let lastline=document.createElement("p");
                 lastline.innerText="We will get back to You shortly";
+
+                let button=document.createElement("button");
+                button.innerText="Get Another Quate";
+
+                
                 
 
-                data_div.append(div,p_name,lastline);
+                data_div.append(div,p_name,lastline,button);
               
                 
         
 
         if (returnval === true) {
                 document.getElementById("form").innerHTML ="" ;
+                // document.getElementById("Email").innerHTML ="" ;
                 document.getElementById("thanks").style.display ="block";
         }
         
