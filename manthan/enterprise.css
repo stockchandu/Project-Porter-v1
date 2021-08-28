@@ -399,14 +399,14 @@
     height: 2rem;
     width: 100%;
     background-image: linear-gradient(94deg, #2962FF, #5e0be0);
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 
 
 .maneger h2 {
     padding: 0px 20px;
-    padding-top: 7.25rem;
+    padding-top: 8rem;
     color: #2962FF;
     
 }
@@ -433,4 +433,85 @@
 }
 .bussiness_desc{
     padding: 1rem;
+}
+
+/* industries section css start here */
+
+#industries{
+
+    margin: 15px 40px;
+}
+#industriestTitle {
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+
+.industriesCont {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2.5rem 0rem; 
+}
+
+
+
+#industriesImg {
+    height: auto;
+    width: 60%;
+}
+
+.industriesDes {
+    transform: rotate(0deg) skewX(20deg) translateX(-50%);
+    position: absolute;
+      left:54%;
+    font-style: italic;
+    width: 60rem;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.industriestable {
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 27.8rem;
+    
+    transform: rotate(0deg) skewX(-7deg) translateX(0);
+    border-radius: 4px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    position: relative;
+    top: 8rem;
+    right:4rem;
+}
+
+.tableLeft {
+
+    width: 10rem;
+    background-color: #8E8FF8;
+    padding: 1.2rem 3rem 1.2rem 1rem;
+}
+
+.tableright {
+    width: 10rem;
+    background-color: #6A79F9;
+    padding: 1.2rem 1rem 1.2rem 3rem;
+}
+
+
+.box1 {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+.industriestable hr {
+    margin: 1% 10%;
+    border: solid 1px #cdcdcd;
+    width: 80%;
+    opacity: 0.5;
+
 }

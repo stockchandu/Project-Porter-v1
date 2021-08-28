@@ -26,7 +26,7 @@ function validateForm() {
                 document.getElementsByClassName("formerror")[0].innerHTML = "*Select the City";
                 returnval = false;
         } else if (City !== "Select city") {
-                document.getElementsByClassName("formerror")[0].innerHTML = "";
+                document.getElementsByClassName("formerror")[0].innerHTML ="";
 
         }
 
@@ -107,6 +107,7 @@ function validateForm() {
 
         if (returnval === true) {
                 document.getElementById("form").innerHTML ="" ;
+                // document.getElementById("Email").innerHTML ="" ;
                 document.getElementById("thanks").style.display ="block";
         }
         
