@@ -229,6 +229,7 @@ body{
                         font-size: 1.4rem;
                         margin-top: 25px;
                         width: 100%;
+                        cursor: pointer;
                 }
 
                 .formerror {
@@ -396,7 +397,7 @@ body{
 .bussiness_cont {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 2rem 8rem ;
+    margin: 2rem 6rem ;
 
 }
 
@@ -422,19 +423,19 @@ body{
 
 .maneger h2 {
     padding: 0px 20px;
-    padding-top: 8rem;
+    padding-top: 7.5rem;
     color: #2962FF;
     
 }
 .CEO h2 {
     padding: 0px 20px;
-    padding-top: 6.1rem;
+    padding-top: 6rem;
     color: #2962FF;
 }
 
 .head h2{
     padding: 0px 20px;
-    padding-top: 1.6rem;
+    /* padding-top: 1.6rem; */
     color: #2962FF;
     
 }
@@ -570,6 +571,7 @@ body{
     font-weight: bold;
     font-size: 1rem;
     margin-top: 25px;
+    cursor: pointer;
    
 }
 .right {
