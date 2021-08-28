@@ -515,3 +515,66 @@
     opacity: 0.5;
 
 }
+
+
+
+/* query section css start here */
+.query {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    height: 240px;
+    width: 75%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    padding: 3rem;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+#queryimg {
+    background-image: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/8bc86f316f7d4e4cfd63d98c88339915.svg");
+    height: 13rem;
+    width: 31rem;
+    background-size: 178%;
+    background-repeat: no-repeat;
+    background-position: 1rem;
+}
+
+#Request-callback2 {
+    background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
+     border: none;
+    border-radius: 2px;
+    padding: 7px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 25px;
+   
+}
+.right {
+    background-color: rgb(119, 172, 119);
+}
+
+.querytitle {
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #4632EE;
+}
+.querydesc{
+    padding-top: 1.5rem;
+}
+
+.querydesc span{
+    color: #2962FF;
+    font-weight: 900;
+}

@@ -78,9 +78,6 @@ function validateForm() {
         }
 
 
-
-
-
         // let data="thank-you"
 
 
