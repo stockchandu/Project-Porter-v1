@@ -17,7 +17,7 @@ its allow user to move goods from one place to another city.
 we team always believe on chewing gum method ,means stick to one thing , without giving up, we followed this rules. and could able to solved the issue.in terms of designing part of the website , creative mind required and the happens when you play with the design.
 
 ## How to clone our project
-1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter, paste this link 👈🏿
+1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter
 
 That's it from our side, we still need to work on few parts of our website , we will update once we made any changes
 
