@@ -855,10 +855,10 @@
     <script src="porterYou.js"></script>
     <script>
         var coll = document.getElementsByClassName("collapsible");
-        var i;
+        var m;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
+        for (m = 0; m < coll.length; m++) {
+            coll[m].addEventListener("click", function () {
                 this.classList.toggle("active");
                 var content = this.nextElementSibling;
                 if (content.style.display === "block") {
