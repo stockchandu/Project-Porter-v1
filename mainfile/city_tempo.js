@@ -123,7 +123,7 @@ function show_error() {
                 setTimeout(function () {
                     window.location.href = "fare_estimate.html";
 
-                }, 2000);
+                }, 1000);
 
                 // break;
 
@@ -328,9 +328,8 @@ function change_clr() {
 let sl_bx_vl = document.getElementById("box_select").addEventListener("change", change_clr);
 
 
-
 function get_btn_show(img_1, img_2, img_3, img_4) {
-    // console.log(img)
+
     img_1.onclick = function () {
 
         image_change.src = "https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/large_vehicles/2_wheeler-947e3c6aac74dcdd11fdd4059e4ee72132b276200dff063d6dff2c445f7aab5b.png"

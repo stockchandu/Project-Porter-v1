@@ -79,6 +79,7 @@ function showDiv() {
     document.getElementById('fare_parent_1').style.visibility = "hidden"
 
     remove_show(cross_image, main_parent);
+    Change_Value(input_1, input_2, button, main_parent);
 
 }
 
@@ -95,3 +96,48 @@ function remove_show(img, main_parent) {
     }
 
 }
+
+function Change_Value(input_1, input_2, btn, main_parent) {
+
+    btn.onclick = function () {
+
+        let store_new_val = [
+
+            {
+                new_pick_up: input_1.value,
+                new_drop_off: input_2.value,
+
+
+            }
+        ]
+
+
+        let convert_json = JSON.stringify(store_new_val);
+
+        localStorage.setItem("new_pick_drop", convert_json);
+
+        let store_new_pick_up = localStorage.getItem("new_pick_drop");
+
+        let convert_obj = JSON.parse(store_new_pick_up);
+
+
+        document.getElementById("pick_up_location").innerText = convert_obj[0].new_pick_up;
+        document.getElementById("drop_off_location").innerText = convert_obj[0].new_drop_off;
+
+        setTimeout(function () {
+
+            main_parent.style.display = "none";
+            document.getElementById('fare_parent_1').style.visibility = "visible";
+
+        }, 1000)
+
+
+        setTimeout(function(){
+
+            document.getElementById("price_1").innerText ="₹ 3400"
+            document.getElementById("price_2").innerText ="₹ 5400"
+            document.getElementById("price_3").innerText ="₹ 6400"
+        },1000)
+
+    }
+    }
