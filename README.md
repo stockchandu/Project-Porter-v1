@@ -14,7 +14,7 @@ its allow user to move goods from one place to another city.
 * Page Dynamic aspects issue (javascript)
 
 ## How we solved the above issue
-we team always believe on chewing gum method ,means stick to one thing , without giving up, we followed this rules. and could able to solved the issue.in terms of designing part of the website , creative mind required and the happens when you play with the design.
+we team always believe on chewing gum method ,means stick to one thing , without giving up, we followed this rules. and could able to solved the issue.in terms of designing part of the website , creative mind required and it happens when you play with the design.
 
 ## How to clone our project
 1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter
