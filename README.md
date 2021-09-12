@@ -42,7 +42,9 @@ we team always believe on chewing gum method ,means stick to one thing , without
 ## How to clone our project
 1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter
 
-That's it from our side, we still need to work on few parts of our website , we will update once we made any changes
+That's it from our side, we still need to work on few parts of our website , we will update once we made any changes.
+
+#### [ Click here to Read full blog](https://medium.com/@malikchandan926/cloning-of-porter-in-website-within-5-days-using-html-css-and-javascript-d58a09b8b8cd)
 
 ### Credit
 * Manthan Mahadev Gaikwad -Github Link-> https://github.com/ManthanG369
