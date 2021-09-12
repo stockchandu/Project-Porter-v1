@@ -2,6 +2,9 @@
 Porter is India's largest marketplace for intra-city logistics, porter enables companies and users to book minitrucks online and track the movement of their goods across the city.
 its allow user to move goods from one place to another city.
 
+![porter](http://url/to/img.png)
+
+
 ## Technology used in the project
 1. HTML5
 2. CSS
