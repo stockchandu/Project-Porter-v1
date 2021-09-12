@@ -2,7 +2,7 @@
 Porter is India's largest marketplace for intra-city logistics, porter enables companies and users to book minitrucks online and track the movement of their goods across the city.
 its allow user to move goods from one place to another city.
 
-![porter](http://url/to/img.png)
+![porter](https://miro.medium.com/max/700/1*BpgRdBD9-FfbejqnuGRWUA.png)
 
 
 ## Technology used in the project
@@ -18,6 +18,19 @@ its allow user to move goods from one place to another city.
 
 ## How we solved the above issue
 we team always believe on chewing gum method ,means stick to one thing , without giving up, we followed this rules. and could able to solved the issue.in terms of designing part of the website , creative mind required and it happens when you play with the design.
+
+##Few Screenshot of our project.
+![porter](https://miro.medium.com/max/700/1*BpgRdBD9-FfbejqnuGRWUA.png)
+![porter](https://miro.medium.com/max/700/1*6ynp1NvAvZTJH8PobkHe7w.png)
+![porter](https://miro.medium.com/max/700/1*2TkhwXoivjNZqGjyHLZlcA.png)
+![porter](https://miro.medium.com/max/700/1*gxUkh9lOsXTwAU-V8B3INw.png)
+![porter](https://miro.medium.com/max/700/1*gxUkh9lOsXTwAU-V8B3INw.png)
+![porter](https://miro.medium.com/max/700/1*tukPH3Wb-i7eb7O5qrUZEg.png)
+
+![porter](https://miro.medium.com/max/369/1*tDiNIrOR5-95Bma1yLGE2w.png)
+![porter](https://miro.medium.com/max/442/1*7OloYKHSke8iNxacabQn5w.png)
+![porter](https://miro.medium.com/max/345/1*-2IR7hgfkh_JC_J5261Gbw.png)
+
 
 ## How to clone our project
 1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter
