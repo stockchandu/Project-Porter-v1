@@ -52,5 +52,5 @@ That's it from our side, we still need to work on few parts of our website , we 
 * Kapil Mogre - Github Link -> https://github.com/kapilmogre1998
 * Chandan Kumar Malik - Github Link ->https://github.com/stockchandu
 
-Thank you
+🙏 Thank you 🙏
 
