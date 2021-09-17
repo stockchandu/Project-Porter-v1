@@ -163,6 +163,9 @@
   padding: 10px;
   display: block;
 }
+#details h3{
+  margin:15px 0px;
+}
 #cty{
   display:none;
 }
