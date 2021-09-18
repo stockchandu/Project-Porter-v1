@@ -5,8 +5,9 @@ body {
 }
 
 
-.in>p{
-    color: rgb(31, 27, 27);
+.in>p{ 
+    color: #7300ff;
+    font-size: 12px;
 }
 
 .in1>p{

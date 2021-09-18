@@ -44,30 +44,39 @@
 
     /* drive car style */
     #parent_header>div:nth-child(3) {
-        height: 5vh;
-        margin: 1% 0 0 68.5%;
+        /* height: 20vh; */
+        margin: 1% 0 0 68.7%;
         position: absolute;
 
     }
+  
 
     #parent_header>div:nth-child(4) {
         width: 10%;
         height: 7vh;
         background-color: #FEDF00;
         margin: 1% 0 0 25%;
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
+        color: #7300ff;
+    }
+    #parent_header>div:nth-child(4)>p{
+        font-weight:900;
+        margin-top: 1px;
     }
 
     #parent_header>div:nth-child(5) {
         height:6.7vh;
-        width: 62px;
+        width: 5%;
         margin: 1% 0 0 0;
-        color: #FEDF00;
+        color: hsl(53, 100%, 50%);
+        font-weight: 700;
+        font-size:13px;
         border-right: 1px solid #FEDF00;
         border-top: 1px solid #FEDF00;
         border-bottom: 1px solid #FEDF00;
-        border-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
         justify-content: center;
         align-items: center;
         display: flex;

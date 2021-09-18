@@ -1,9 +1,18 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
 
+}
+
+#emp_div {
+    width: 100%;
+    height: auto;
+    margin-top: 63%;
+    position: absolute;
+}
 /* sliding images style start here */
 #slide_div_1 {
     width: 100%;
-    /* height: 500px; */
-    /* border: 1px solid rgb(197, 28, 28); */
 }
 
 
@@ -14,7 +23,7 @@
     width: 95%;
     display: flex;
     height: 50px;
-    border: 1px solid rgb(230, 228, 228);
+    /* border: 5px solid rgb(0, 0, 0); */
     box-shadow: 0px 0px 15px 0px #888888;
     color: #353535;
     font-size: 12px;
@@ -23,16 +32,26 @@
 
 }
 
-#get_estimate>div:nth-child(1) {
-    width: 15%;
-    /* background-color: red */
+#city_margin{
+   padding-left: 5%;
 }
 
+#get_estimate>div:nth-child(1) {
+    width: 15%;
+    border-left:1px solid rgb(177, 177, 177);
+}
+
+#get_estimate>div:nth-child(7){
+    border-right:1px solid rgb(177, 177, 177);
+}
 #get_estimate>div {
     width: 25%;
     border-right: 1px solid rgb(204, 202, 202);
     background-color:white;
     opacity: 0.9;
+    border-top:1px solid rgb(177, 177, 177);
+    border-bottom:1px solid rgb(177, 177, 177);
+   
 
 }
 
@@ -1065,7 +1084,7 @@
 }
 
 #still_question_1>div:nth-child(2) {
-    width: 105px;
+    width:22%;
     padding: 13px 20px;
     background-color: #3A3A3A;
     margin-top: 15px;
