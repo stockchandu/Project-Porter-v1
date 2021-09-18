@@ -1,9 +1,27 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
 .under_bar{
     width: 110px;
     height: 3px;
     background-color:#2962FF;
     margin-top: 4%;
 } 
+
+
+.city_tempo{
+    text-decoration: none; color: #3a3a3a;
+}
+
+#drive_part_link{
+    text-decoration: none; color: #4562FF;
+}
+#myselect2>option:nth-child(1),#myselect3>option:nth-child(1){
+    display: none;
+}
 #register {
 background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partner_hero_banner-3620167036690f9db1bb979b43b863835305dfdfb08c97584baa3de7727002c4.jpg");
 height: 600px;
@@ -22,14 +40,17 @@ margin-left: 5%;
 word-wrap: break-word;
 height: 70%;
 padding:10px;
+display: block;
 }
 #required{
 margin-right:50%;
 color:red;
+display:none;
 }
 #required2{
 margin-right:40%;
 color:red;
+display:none
 }
 #extradiv{
 background-color: rgb(254,223,0);
@@ -38,6 +59,7 @@ text-align: center;
 margin-top: 10%;
 margin-right: 10%;
 padding:30px;
+display:none;
 }
 #tk{
 font-size: 30px;
@@ -69,6 +91,10 @@ margin:20px 0px;
 form {
 display: flex;
 flex-direction: column;
+}
+
+#cty{
+    display:none;
 }
 input{
 padding: 5%;

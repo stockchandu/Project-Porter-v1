@@ -14,12 +14,7 @@
     <link rel="icon" href="https://d35ppnqksufxmo.cloudfront.net/frontend_website/favicon.ico">
     <title>Come Join Us! Attach your mini truck or bike with Porter</title>
 </head>
-<style>
-    body {
-        overflow-x: hidden;
-        font-family: 'Titillium Web', sans-serif;
-    }
-</style>
+
 
 </html>
 
@@ -45,21 +40,21 @@
                 <p>JOIN US</p>
             </div>
 
-            <div> <img src="call.PNG" alt=""></div>
+            <div> <img src="../images/call.PNG" alt=""></div>
             <div class="in2">
                 <p>4410-4410</p>
                 <span>add your city code</span>
             </div>
         </div>
         <div id="header_1_1">
-            <div><a href="index.html" style="text-decoration: none; color: #3a3a3a;;"> CITY TEMPO</a>
+            <div><a href="index.html" class="city_tempo"> CITY TEMPO</a>
             </div>
-            <div class="active"><a href="packer_mover.html" style="text-decoration: none; color: #3a3a3a;"> PACKERS & MOVERS</a>
+            <div class="active"><a href="packer_mover.html" class="city_tempo"> PACKERS & MOVERS</a>
                 
             </div>
-            <div style="cursor: pointer;"><a href="driver_partner.html" style="text-decoration: none; color: #4562FF;"> DRIVER PARTNERS</a>
+            <div><a href="driver_partner.html" id="drive_part_link"> DRIVER PARTNERS</a>
                 <div class="under_bar"></div></div>
-            <div><a href="for_enterprise.html" style="text-decoration: none; color: #3a3a3a;">FOR ENTERPRISE</a> </div>
+            <div><a href="for_enterprise.html"class="city_tempo">FOR ENTERPRISE</a> </div>
             <div>Support</div>
             <div>Track Order</div>
         </div>
@@ -71,17 +66,17 @@
     <div id="register">
         <div id="right">
     
-            <div id="details" style="display: block">
+            <div id="details">
                 <form>
                     <h3 style="margin:15px 0px">ATTACH VEHICLE NOW</h3>
                     <div ><input  placeholder="Name" id="nm" type="text" /></div>
-                  <div style="display:none" id="required">*This field is required</div>
+                  <div id="required">*This field is required</div>
                     <div ><input placeholder="Mobile Number" id="mobile" type="number"/></div>
-                  <div style="display:none" id="required2"></div>
+                  <div  id="required2"></div>
                     <div id="city">
                       <span >
                         <select id="myselect" >
-                            <option style="display:none"id="cty">CITY</option>
+                            <option id="cty">CITY</option>
                             <option value="mumbai" >Mumbai</option>
                             <option value="delhi">DELHI NCR</option>
                             <option value="banglore">BANGALORE</option>
@@ -93,7 +88,7 @@
                       </span>
                       <span >
                         <select id="myselect2">
-                            <option style="display:none">SELECT VEHICLE</option>
+                            <option>SELECT VEHICLE</option>
                             <option>TATA ACE</option>
                             <option>3 WHEELER</option>
                             <option>ACE HELPER</option>
@@ -102,7 +97,7 @@
                   </div>
                     <div id="hearabout">
                         <select id="myselect3">
-                            <option style="display:none">WHERE DID YOU HEAR ABOUT US?</option>
+                            <option>WHERE DID YOU HEAR ABOUT US?</option>
                             <option>BUS ADS</option>
                             <option>PAMPHLET</option>
                         </select>
@@ -111,7 +106,7 @@
                     <button onclick="regis()" id="regis">REGISTER</button>
             </div>
     
-            <div id="extradiv" style="display:none">
+            <div id="extradiv">
                     <div id="tk">THANK YOU FOR <br> REGISTRATION</div>
                     <div id="entername"></div>
                     <div id="bk">We will get back to you <br>shortly</div>

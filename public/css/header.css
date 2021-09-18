@@ -2,6 +2,10 @@
     * {
         margin: 0;
     }
+    body {
+        overflow-x: hidden;
+        font-family: 'Titillium Web', sans-serif;
+    }
     #parent_header {
         width: 100%;
         background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
@@ -48,7 +52,7 @@
 
     #parent_header>div:nth-child(4) {
         width: 10%;
-        height: 6vh;
+        height: 7vh;
         background-color: #FEDF00;
         margin: 1% 0 0 25%;
         font-size: 13px;
@@ -56,15 +60,17 @@
     }
 
     #parent_header>div:nth-child(5) {
-        height:24px;
-        width: 55px;
+        height:6.7vh;
+        width: 62px;
         margin: 1% 0 0 0;
-        padding:7px;
         color: #FEDF00;
         border-right: 1px solid #FEDF00;
         border-top: 1px solid #FEDF00;
         border-bottom: 1px solid #FEDF00;
         border-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     #parent_header>div:nth-child(6) {
