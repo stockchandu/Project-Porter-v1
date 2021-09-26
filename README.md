@@ -40,7 +40,8 @@ we team always believe on chewing gum method ,means stick to one thing , without
 
 
 ## How to clone our project
-1.Go to visual studio code or open any terminal , type git clone https://github.com/stockchandu/project-porter
+1.Go to visual studio code or open any terminal , type 
+```git clone https://github.com/stockchandu/project-porter```
 
 That's it from our side, we still need to work on few parts of our website , we will update once we made any changes.
 
